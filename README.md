@@ -1,2 +1,0 @@
-# bi-application
-bi-application

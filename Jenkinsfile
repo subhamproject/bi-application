@@ -22,7 +22,7 @@ pipeline {
         }
       }
     }
-    stage('Docker Image Build') {
+    stage('Build artifact') {
       steps {
         script {
           sh '''

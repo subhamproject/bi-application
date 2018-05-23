@@ -22,7 +22,7 @@ pipeline {
         }
       }
     }
-    stage('Build artifact') {
+    stage('Build Artifact') {
       steps {
         script {
           sh '''

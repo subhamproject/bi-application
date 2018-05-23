@@ -17,10 +17,19 @@ pipeline {
       steps {
         script {
           sh '''
-            SBI/dockerize.sh
+            SBI/test.sh
           '''
         }
       }
     }
-   }
+    stage('Docker Image Build') {
+      steps {
+        script {
+          sh '''
+            SBI/dockerize.sh
+                      '''
+        }
+      }
+    }
   }
+}
